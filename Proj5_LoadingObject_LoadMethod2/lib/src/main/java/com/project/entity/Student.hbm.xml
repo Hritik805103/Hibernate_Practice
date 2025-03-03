@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  import DTD rules -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+    
+    <hibernate-mapping>
+    
+    <class name="com.project.entity.StudentEntity" lazy="true" proxy="com.project.entity.IStudentEntity" table="student" dynamic-insert="true"> 
+    <!-- disables lazy loading -->
+    <!-- <class name="com.project.entity.StudentEntity" lazy="false" table="student" dynamic-insert="true">  -->
+    
+  		  <id name="id" column="Id"></id>
+ 		  <property name="name" column="Name"></property>
+    	  <property name="course" column="Course"></property>
+    	  <property name="email" column="Email"></property>
+    </class>
+    
+    </hibernate-mapping>

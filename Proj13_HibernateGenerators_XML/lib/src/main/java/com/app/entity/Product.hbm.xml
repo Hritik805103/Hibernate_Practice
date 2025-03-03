@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--  import DTD rules -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+    
+    <hibernate-mapping>
+    
+    <class name="com.app.entity.Product" table="product" > 
+    <!-- disables lazy loading -->
+    <!-- <class name="com.project.entity.StudentEntity" lazy="false" table="student" dynamic-insert="true">  -->
+    
+  		  <id name="id">
+  		  	<generator class="com.hibernate.id.Assigned"></generator>
+  		  </id>
+ 		  <property name="price" ></property>
+    	  <property name="name"></property>
+    	  <property name="qty"></property>
+    </class>
+    
+    </hibernate-mapping>

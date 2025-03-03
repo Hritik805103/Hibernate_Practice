@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  import DTD rules -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+    
+     <hibernate-mapping>
+    
+    <class name="com.app.entity.PassengerTicketEntity" table="passenger_ticket" > 
+    <!-- disables lazy loading -->
+    <!-- <class name="com.project.entity.StudentEntity" lazy="false" table="student" dynamic-insert="true">  -->
+    
+  		  <id name="id"></id>
+ 		  <property name="name" ></property>
+    	  <property name="pnr"></property>
+    	  <property name="ticketPrice"></property>
+    	   <property name="trainNo"></property>
+    </class>
+    
+    </hibernate-mapping>

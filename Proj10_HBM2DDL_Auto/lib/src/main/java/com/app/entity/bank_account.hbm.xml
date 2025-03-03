@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  import DTD rules -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+    
+     <hibernate-mapping>
+    
+    <class name="com.app.entity.BankAccount" table="bank_account" > 
+    <!-- disables lazy loading -->
+    <!-- <class name="com.project.entity.StudentEntity" lazy="false" table="student" dynamic-insert="true">  -->
+    
+  		  <id name="id"></id> 
+ 		  <property name="AcHolderName" length="12" type="string" not-null="true" ></property>
+    	  <property name="balance" type="float" not-null="true" ></property>
+    	  <property name="AcNumber" type="long" not-null="true" ></property>
+    	  
+
+    </class>
+    
+    </hibernate-mapping>
